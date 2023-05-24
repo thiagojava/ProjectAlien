@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import FormLayoutsTabs from "../src/components/FormLayoutsTabs";
-import Navbar from "../src/components/Layout/Navbar";
+import FormLayoutsTabs from "../components/formLayoutsTabs/FormLayoutsTabs";
+import Navbar from "../components/Layout/Navbar";
 
 const Cadastro = () => (
   <>

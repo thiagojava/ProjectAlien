@@ -1,0 +1,1 @@
+export const card = { backgroundColor: "#141414" };
