@@ -1,7 +1,6 @@
-import { Box, Card, ImageListItem, Typography } from "@mui/material";
-import DocumentScannerIcon from "@mui/icons-material/DocumentScanner";
-import Image from "mui-image";
-import { fluxoCaixaCard } from "../../utils/fluxoCaixaCards";
+import { Box, Card, Typography } from "@mui/material";
+import { fluxoCaixaCard, fluxoCaixaIcon } from "../../utils/fluxoCaixaCards";
+import { ImageCard } from "../imageCard/ImageCard";
 
 export const FluxoCaixaMain = () => {
   return (
@@ -9,46 +8,74 @@ export const FluxoCaixaMain = () => {
       <Card
         sx={{
           width: { xs: "100%", sm: "90%" },
-          height: "900px",
           mx: "auto",
           mt: 2,
         }}
         style={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
           background: "#000000",
+          justifyContent: "space-around",
         }}
       >
         {fluxoCaixaCard.map((e, index) => (
-          <Card
+          <ImageCard
             key={index}
-            sx={{ width: "28%", height: "150px" }}
-            style={{
-              background: "#141414",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-around",
-            }}
-          >
-            <Box>
-              <Typography color="#ffffff" style={{ fontSize: "20px" }}>
-                {e.name}
-              </Typography>
-              <Typography style={{ fontSize: "14px", color: "#969696" }}>
-                {e.description}
-              </Typography>
-              <Box display="flex" flexDirection="row">
-                <DocumentScannerIcon sx={{ color: "#969696" }} />
-                <Typography style={{ fontSize: "14px", color: "#4BB543" }}>
-                  {e.value}
-                </Typography>
-              </Box>
-            </Box>
-            <Box>
-              <Image src={e.img} alt="text" />
-            </Box>
-          </Card>
+            index={index}
+            name={e.name}
+            description={e.description}
+            icon={e.icon}
+            value={e.value}
+            img={e.img}
+            width={e.width}
+          />
         ))}
+        <Card
+          sx={{ width: "60%", height: "200px" }}
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.8911939775910365) 0%, rgba(20,20,20,1) 50%)",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            width: "40%",
+          }}
+        >
+          <Box marginBottom="10px" padding="10px" height="100%" display="flex" flexDirection="column" justifyContent="center">
+            <Typography color="#ffffff" style={{ fontSize: "20px" }}>
+              Resumo transações
+            </Typography>
+            <Typography style={{ fontSize: "14px", color: "#969696" }}>
+              Você inseriu um total de: 123
+            </Typography>
+          </Box>
+          <Box display="flex" flexDirection="column">
+            {fluxoCaixaIcon.map((e, index) => (
+              <Box
+                key={index}
+                display="flex"
+                flexDirection="row"
+                marginRight="10px"
+                alignItems="center"
+              >
+                {e.icon}
+                <Box
+                  display="flex"
+                  flexDirection="column"
+                  alignItems="flex-start"
+                >
+                  <Typography fontSize={5} color="#969696">
+                    {e.name}
+                  </Typography>
+                  <Typography fontSize={4} color="#ffffff">
+                    {e.value}
+                  </Typography>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Card>
       </Card>
     </>
   );

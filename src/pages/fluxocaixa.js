@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import Navbar from "../components/Layout/Navbar";
 import { FluxoCaixaMain } from "../components/fluxoCaixaMain/fluxoCaixaMain";
+import { FluxoCaixaSelectCard } from "../components/fluxoCaixaSelectCard/FluxoCaixaSelectCard";
 
 const FluxoCaixa = () => (
   <>
@@ -8,6 +9,7 @@ const FluxoCaixa = () => (
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <FluxoCaixaMain />
+        <FluxoCaixaSelectCard />
       </Grid>
     </Grid>
   </>
