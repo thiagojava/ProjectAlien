@@ -1,7 +1,22 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton, Avatar } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import Link from 'next/link';
+import React from "react";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  IconButton,
+  Avatar,
+  Container,
+  Box,
+} from "@material-ui/core";
+import AdbIcon from "@mui/icons-material/Adb";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import InfoIcon from "@mui/icons-material/Info";
+import { makeStyles } from "@material-ui/core/styles";
+import { linksNavigate } from "../../utils/linksNavigate";
+import { useRouter } from "next/router";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,34 +35,84 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navbar = () => {
-  const classes = useStyles();
-  const userAvatar = "/path/to/your/image.jpg"; // Coloque aqui o caminho para a imagem do usuário
+  const router = useRouter();
+  const { asPath } = useRouter();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            <Link href="/dashboard">Dashboard</Link>
-          </Typography>
-          <Button color="inherit">
-            <Link href="/cadastro">Cadastro</Link>
-          </Button>
-          <Button color="inherit">
-            <Link href="/estrutura">Estrutura</Link>
-          </Button>
-          <Button color="inherit">
-            <Link href="/fluxo-de-caixa">Fluxo de Caixa</Link>
-          </Button>
-          <Button color="inherit">
-            <Link href="/perfil">Perfil</Link>
-          </Button>
-          <IconButton edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
-            <Avatar alt="User Avatar" src={userAvatar} className={classes.large} />
-          </IconButton>
+    <AppBar position="static">
+      <Container maxWidth="100%" style={{ backgroundColor: "#141414" }}>
+        <Toolbar
+          style={{
+            backgroundColor: "#141414",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
+          <Box>
+            <AdbIcon />
+            <Typography
+              variant="h6"
+              component="a"
+              href="/"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              LOGO
+            </Typography>
+          </Box>
+          <Box>
+            <CloudUploadIcon sx={{ color: "#969696", marginRight: "10px" }} />
+            <WbSunnyIcon sx={{ color: "#969696", marginRight: "10px" }} />
+            <NotificationsIcon sx={{ color: "#969696", marginRight: "10px" }} />
+            <InfoIcon sx={{ color: "#969696", marginRight: "10px" }} />
+          </Box>
         </Toolbar>
-      </AppBar>
-    </div>
+      </Container>
+      <Container maxWidth="100%" style={{ backgroundColor: "#141414" }}>
+        <Toolbar
+          style={{ backgroundColor: "#141414", borderTop: "1px solid #969696", display: 'flex', justifyContent:"space-between" }}
+        >
+          <Box
+            style={{
+              width: "60%",
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "noWrap",
+              justifyContent: "space-evenly",
+            }}
+          >
+            {linksNavigate.map((e, index) => (
+              <Button
+                key={index}
+                onClick={() => router.push(e.param)}
+                variant="outlined"
+                startIcon={e.icon}
+                style={{
+                  background:
+                    asPath === e.param
+                      ? "linear-gradient(129deg, rgba(2,0,36,1) 0%, rgba(90,36,105,1) 41%)"
+                      : "transparent",
+                  color: "#ffffff",
+                  border: "0px",
+                  borderRadius: "30px"
+                }}
+              >
+                {e.label}
+              </Button>
+            ))}
+          </Box>
+          <Avatar>H</Avatar>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
 

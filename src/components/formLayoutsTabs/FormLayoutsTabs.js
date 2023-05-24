@@ -1,28 +1,20 @@
 // ** React Imports
-import { forwardRef, useState } from "react";
+import { useState } from "react";
 
 // ** MUI Imports
 import Tab from "@mui/material/Tab";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
-import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import TabContext from "@mui/lab/TabContext";
-import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
-import InputLabel from "@mui/material/InputLabel";
-import IconButton from "@mui/material/IconButton";
 import CardContent from "@mui/material/CardContent";
-import FormControl from "@mui/material/FormControl";
 import CardActions from "@mui/material/CardActions";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputAdornment from "@mui/material/InputAdornment";
-import Select from "@mui/material/Select";
 import CreditCardInfoBox from "../CreditCardInfoBox";
 import AccumulatedVolumeBox from "../AccumulatedVolumeBox";
-import { BackButton, card } from "./style";
+import { card } from "../style";
 import { formTab } from "../../utils/formTab";
 import { Box, Tabs, Typography } from "@mui/material";
 
@@ -82,8 +74,8 @@ const FormLayoutsTabs = () => {
 
   const handleBankDataChange = (prop) => (event) => {
     setBankData({ ...bankData, [prop]: event.target.value });
-    console.log("bankData ", bankData);
   };
+
   return (
     <Card
       sx={{
@@ -98,7 +90,7 @@ const FormLayoutsTabs = () => {
           value={value}
           onChange={handleTabsChange}
           TabIndicatorProps={{
-            sx: { backgroundColor: "#5A2469" },
+            sx: { background: "#5A2469" },
           }}
           sx={{
             "& div": { justifyContent: "space-around" },
