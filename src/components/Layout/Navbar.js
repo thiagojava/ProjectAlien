@@ -17,6 +17,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import { makeStyles } from "@material-ui/core/styles";
 import { linksNavigate } from "../../utils/linksNavigate";
 import { useRouter } from "next/router";
+import ApexRadialBarChart from "../Charts/Apex";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -67,6 +68,7 @@ const Navbar = () => {
             >
               LOGO
             </Typography>
+            <ApexRadialBarChart />
           </Box>
           <Box>
             <CloudUploadIcon sx={{ color: "#969696", marginRight: "10px" }} />
