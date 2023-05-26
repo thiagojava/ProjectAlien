@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import Navbar from "../components/Layout/Navbar";
 import { FluxoCaixaMain } from "../components/fluxoCaixaMain/fluxoCaixaMain";
-import { FluxoCaixaSelectCard } from "../components/fluxoCaixaSelectCard/FluxoCaixaSelectCard";
+import { FluxoCaixaSelectCard } from "../components/fluxoCaixaMain/fluxoCaixaSelectCard/FluxoCaixaSelectCard";
 
 const FluxoCaixa = () => (
   <>

@@ -29,7 +29,7 @@ export const ImageCard = (props) => {
             </Typography>
           </Box>
         </Box>
-        <Image src={img} alt="text" width={100} height={200} style={{padding:"10px"}}/>
+        {img?<Image src={img} alt="text" width={100} height={200} style={{padding:"10px"}}/>:null}
       </Card>
     )
 }
