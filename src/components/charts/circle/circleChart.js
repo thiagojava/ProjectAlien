@@ -13,9 +13,7 @@ export const CircleChart = (props) => {
     value,
     tags,
     labels,
-    data,
-    borderColor,
-    backgroundColor,
+    data
   } = props;
 
   const datas = {
