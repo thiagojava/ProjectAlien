@@ -66,41 +66,7 @@ export const PerfilDashboard = () => {
             display="flex"
             flexDirection="column"
           >
-            <Doughnut data={data} />
-            <Typography
-              color="#ffffff"
-              style={{ fontSize: "12px", color: "#969696" }}
-            >
-              Meta de faturamento 89%
-            </Typography>
-          </Box>
-          <Box
-            height="100%"
-            flexBasis="33%"
-            display="flex"
-            flexDirection="column"
-          >
-            <Doughnut data={data} />
-            <Typography
-              color="#ffffff"
-              style={{ fontSize: "12px", color: "#969696" }}
-            >
-              Meta de faturamento 89%
-            </Typography>
-          </Box>
-          <Box
-            height="100%"
-            flexBasis="33%"
-            display="flex"
-            flexDirection="column"
-          >
-            <Doughnut data={data} />
-            <Typography
-              color="#ffffff"
-              style={{ fontSize: "12px", color: "#969696" }}
-            >
-              Meta de faturamento 89%
-            </Typography>
+           
           </Box>
         </Box>
         <Box height="80px">
