@@ -13,7 +13,6 @@ export const SimpleCircleChart = (props) => {
         label: name,
         data: ["89","11"],
         backgroundColor: [props.colors.back, "#969696"],
-        borderColor: [props.colors.border, "#717171"],
         borderColor: '#141414',
         borderWidth: 10,
       },
@@ -21,14 +20,22 @@ export const SimpleCircleChart = (props) => {
   };
 
   const options = {
-    cutoutPercentage: 70, 
     plugins: {
+      tooltip: {
+        enabled: false,
+      },
       legend: {
         display: true,
-        position: 'chartArea', 
-        labels: {
-          boxWidth: 20,
-        },
+      },
+    },
+    elements: {
+      center: {
+        text: "89%",
+        color: "#ffffff",
+        fontStyle: "Arial",
+        sidePadding: 40,
+        minFontSize: 20,
+        lineHeight: 25,
       },
     },
   };
