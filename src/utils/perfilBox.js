@@ -40,3 +40,9 @@ export const perfilInputs = [
     {name: 'Qual o patrimônio de seus sonhos?'},
     {name: 'Quanto gostaria de receber mensalmente de renda?'},
 ]
+
+export const perfilChartData = [
+  {name: "faturamento", value:89, color:['#a71674'], label:["data"]},
+  {name: "despesas", value:89, color:['#a71674'], label:["data"]},
+  {name: "patrimônio", value:89, color:['#a71674'], label:["data"]},
+]

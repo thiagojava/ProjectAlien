@@ -1,8 +1,7 @@
 import { Avatar, Box, Typography } from "@mui/material";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { Doughnut } from "react-chartjs-2";
 import ContactsIcon from "@mui/icons-material/Contacts";
-
+import { Doughnut } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
@@ -62,11 +61,55 @@ export const PerfilDashboard = () => {
         <Box height="120px" display="flex" justifyContent="space-around">
           <Box
             height="100%"
+            width="100%"
+            display="flex"
+            flexDirection="row"
+          >
+           <Box
+            height="100%"
             flexBasis="33%"
             display="flex"
             flexDirection="column"
+            alignItems="center"
           >
-           
+            <Doughnut data={data} />
+            <Typography
+              color="#ffffff"
+              style={{ fontSize: "12px", color: "#969696" }}
+            >
+              Meta de faturamento 89%
+            </Typography>
+          </Box>
+          <Box
+            height="100%"
+            flexBasis="33%"
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+          >
+            <Doughnut data={data} />
+            <Typography
+              color="#ffffff"
+              style={{ fontSize: "12px", color: "#969696" }}
+            >
+              Meta de faturamento 89%
+            </Typography>
+          </Box>
+          <Box
+            height="100%"
+            flexBasis="33%"
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+          >
+            <Doughnut data={data} />
+            <Typography
+              color="#ffffff"
+              style={{ fontSize: "12px", color: "#969696" }}
+            >
+              Meta de faturamento 89%
+            </Typography>
+          </Box>
           </Box>
         </Box>
         <Box height="80px">
