@@ -18,10 +18,13 @@ export const HeadersCharts = (props) => {
       }}
     >
       <Box
-        width="100%"
-        display="flex"
-        justifyContent="space-around"
-        padding="30px"
+        sx={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          padding: "30px",
+          background: "#343134"
+        }}
       >
         {data[0].top.map((e, index) => {
           const colors = colorsChart[Math.floor(Math.random() * 5)];
@@ -34,8 +37,8 @@ export const HeadersCharts = (props) => {
               flexDirection="column"
               alignItems="center"
             >
-              <SimpleCircleChart name={e} colors={colors} />
-              <Typography color="#969696" style={{ fontSize: "12px" }}>
+              <SimpleCircleChart name={e} colors={colors} back={"#343134"}/>
+              <Typography color="#ffffff" style={{ fontSize: "16px" }}>
                 {e}
               </Typography>
             </Box>

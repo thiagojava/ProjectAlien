@@ -1,7 +1,7 @@
 import { Box, Card, Typography } from "@mui/material";
 
-export const CardBox = (props,{ children }) => {
-  const { width, direction, content, basis, title, subtitle } = props;
+export const CardBox = (props) => {
+  const { width, direction, content, basis, title, subtitle, children } = props;
   return (
     <>
       <Card
@@ -24,7 +24,7 @@ export const CardBox = (props,{ children }) => {
             {subtitle || "Lorem Ipsum"}
           </Typography>
         </Box>
-        { children }
+        {children}
       </Card>
     </>
   );

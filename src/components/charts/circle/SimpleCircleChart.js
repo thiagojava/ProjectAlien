@@ -4,7 +4,7 @@ import { Doughnut } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const SimpleCircleChart = (props) => {
-  const { name } = props;
+  const { name, back } = props;
 
   const datas = {
     labels: [],
@@ -13,7 +13,7 @@ export const SimpleCircleChart = (props) => {
         label: name,
         data: ["89","11"],
         backgroundColor: [props.colors.back, "#969696"],
-        borderColor: '#141414',
+        borderColor: back || '#141414',
         borderWidth: 10,
       },
     ],
