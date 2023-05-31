@@ -14,11 +14,11 @@ const FluxoCaixa = () => (
         <Box display="flex" flexDirection="column" alignItems="center">
           <FluxoCaixaMain2 />
           <BoxCharts />
-          <BoxHistory />
           <TableList
             heads={tablesFluxoDeCaixa[0].heads}
             rows={tablesFluxoDeCaixa[1].rows}
           />
+          <BoxHistory />
         </Box>
       </Grid>
     </Grid>
