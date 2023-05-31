@@ -52,16 +52,17 @@ export const LineChart = (props) => {
 
   return (
     <Box marginTop="20px" sx={{ background: "#141414", borderRadius: "10px" }}>
-      <Box
-        marginBottom="10px"
-        padding="10px"
-      >
-        <Typography color="#ffffff" style={{ fontSize: "20px" }}>
-          {name}
-        </Typography>
-        <Typography style={{ fontSize: "14px", color: "#969696" }}>
-          {description}
-        </Typography>
+      <Box marginBottom="10px" padding="10px">
+        {name ? (
+          <Typography color="#ffffff" style={{ fontSize: "20px" }}>
+            {name}
+          </Typography>
+        ) : null}
+        {description ? (
+          <Typography style={{ fontSize: "14px", color: "#969696" }}>
+            {description}
+          </Typography>
+        ) : null}
       </Box>
       <Box>
         <Line options={options} data={datas} />
