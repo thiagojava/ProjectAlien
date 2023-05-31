@@ -85,6 +85,7 @@ export const tablesDre = [
 export const tablesFluxoDeCaixa = [
   {
     heads: [
+      "",
       "Data",
       "Banco",
       "Transação",
@@ -99,6 +100,7 @@ export const tablesFluxoDeCaixa = [
   {
     rows: [
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -110,6 +112,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -121,6 +124,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -132,6 +136,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -143,6 +148,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -154,6 +160,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -165,6 +172,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -176,6 +184,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -187,6 +196,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -198,6 +208,7 @@ export const tablesFluxoDeCaixa = [
         observações: "But i Must explain to you how all this mistaken idea",
       },
       {
+        empty:"",
         data: "22 Mai 2023",
         banco: "Bradesco",
         transacao: "Débito",
@@ -215,6 +226,7 @@ export const tablesFluxoDeCaixa = [
 export const tablesGestor = [
   {
     heads: [
+      "",
       "Data Cadastro",
       "Sexo",
       "Idade",
@@ -229,6 +241,7 @@ export const tablesGestor = [
   {
     rows: [
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -240,6 +253,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -251,6 +265,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -262,6 +277,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -273,6 +289,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -284,6 +301,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -295,6 +313,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -306,6 +325,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -317,6 +337,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
@@ -328,6 +349,7 @@ export const tablesGestor = [
         cidadeUf: "São José do Rio Preto SP",
       },
       {
+        empty:"",
         dataCadastro: "22 Mai 2023",
         sexo: "Masculino",
         idade: "37",
