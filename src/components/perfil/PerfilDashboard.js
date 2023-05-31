@@ -1,20 +1,6 @@
 import { Avatar, Box, Typography } from "@mui/material";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import ContactsIcon from "@mui/icons-material/Contacts";
-import { Doughnut } from "react-chartjs-2";
-ChartJS.register(ArcElement, Tooltip, Legend);
-
-export const data = {
-  datasets: [
-    {
-      label: "# of Votes",
-      data: [89, 11],
-      backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(54, 162, 235, 0.2)"],
-      borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
-      borderWidth: 0.5,
-    },
-  ],
-};
+import { SimpleCircleChart } from "../charts/circle/SimpleCircleChart";
 
 export const PerfilDashboard = () => {
   return (
@@ -72,7 +58,7 @@ export const PerfilDashboard = () => {
             flexDirection="column"
             alignItems="center"
           >
-            <Doughnut data={data} />
+            <SimpleCircleChart name={"Faturamento"} colors={{back:"#CC83E2"}} />
             <Typography
               color="#ffffff"
               style={{ fontSize: "12px", color: "#969696" }}
@@ -87,7 +73,7 @@ export const PerfilDashboard = () => {
             flexDirection="column"
             alignItems="center"
           >
-            <Doughnut data={data} />
+            <SimpleCircleChart name={"Investida"} colors={{back:"#F0CD32"}} />
             <Typography
               color="#ffffff"
               style={{ fontSize: "12px", color: "#969696" }}
@@ -102,7 +88,7 @@ export const PerfilDashboard = () => {
             flexDirection="column"
             alignItems="center"
           >
-            <Doughnut data={data} />
+            <SimpleCircleChart name={"Start-up"} colors={{back:"#de6449"}} />
             <Typography
               color="#ffffff"
               style={{ fontSize: "12px", color: "#969696" }}
@@ -113,7 +99,7 @@ export const PerfilDashboard = () => {
           </Box>
         </Box>
         <Box height="80px">
-          <Box height="100%" display="flex" justifyContent="flex-start" >
+          <Box height="100%" display="flex" justifyContent="space-around" >
             <Box display="flex" justifyContent="center" alignItems="center" marginRight="10px">
               <ContactsIcon
                 fontSize="large"

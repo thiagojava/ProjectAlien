@@ -15,7 +15,7 @@ export const DespesasMain = () => {
         marginTop="10px"
         justifyContent="space-between"
       >
-        <CardBox basis="24%">
+        <CardBox basis="24%" title='Suas despesas' subtitle='O total projetado para o período é de 12% maior que o anterior'>
           <Box marginTop="70px">
             <Typography color="#969696" style={{ fontSize: "12px" }}>
               R$
@@ -25,7 +25,7 @@ export const DespesasMain = () => {
             </Typography>
           </Box>
         </CardBox>
-        <CardBox basis="24%">
+        <CardBox basis="24%" title='Custo de capital' subtitle='Você já pagou 12% do valor total das suas operações de financiamento'>
           <Box marginTop="70px">
             <Typography color="#969696" style={{ fontSize: "12px" }}>
               R$
@@ -35,7 +35,7 @@ export const DespesasMain = () => {
             </Typography>
           </Box>
         </CardBox>
-        <CardBox basis="48%">
+        <CardBox basis="48%" title='Lifestyle' subtitle='Suas despesas pessoais acumuladas no período é de:123.456.789'>
           <Box display="flex" justifyContent="space-around">
             {headerDespesas.map((e, index) => {
               const colors = colorsChart[Math.floor(Math.random() * 5)];
@@ -76,7 +76,7 @@ export const DespesasMain = () => {
         marginTop="10px"
         justifyContent="space-between"
       >
-        <CardBox basis="48%">
+        <CardBox basis="48%" title='Habitação' subtitle='O valor é de 123% em relação ao período anterior'>
           <Box display="flex" gap="150px">
             <Box>
               <Box marginTop="50px">
@@ -117,7 +117,7 @@ export const DespesasMain = () => {
             </Box>
           </Box>
         </CardBox>
-        <CardBox basis="48%">
+        <CardBox basis="48%" title='Consumo' subtitle='O valor é de 123% em relação ao período'>
           <Box display="flex" gap="150px">
             <Box>
               <Box marginTop="50px">
@@ -165,7 +165,7 @@ export const DespesasMain = () => {
         marginTop="10px"
         justifyContent="space-between"
       >
-        <CardBox basis="48%">
+        <CardBox basis="48%" title='Transporte' subtitle='O valor é de 123% em relação ao período anterior'>
           <Box display="flex" gap="150px">
             <Box>
               <Box marginTop="50px">
@@ -206,7 +206,7 @@ export const DespesasMain = () => {
             </Box>
           </Box>
         </CardBox>
-        <CardBox basis="48%">
+        <CardBox basis="48%" title='Pessoal' subtitle='O valor é de 123% em relação ao período'>
           <Box display="flex" gap="150px">
             <Box>
               <Box marginTop="50px">
@@ -255,7 +255,7 @@ export const DespesasMain = () => {
         marginBottom="10px"
         justifyContent="space-between"
       >
-        <CardBox basis="24%">
+        <CardBox basis="24%" title='Diversos' subtitle='O valor é de 123% em relação ao período anterior'>
           <Box display="flex" gap="50px">
             <Box>
               <Box marginTop="50px">
@@ -272,32 +272,32 @@ export const DespesasMain = () => {
             </Box>
           </Box>
         </CardBox>
-        <CardBox basis="12%">
+        <CardBox basis="12%" title='Home' subtitle='Quanto vc gastou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#E97406" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%">
+        <CardBox basis="12%" title='Estrutura' subtitle='Quanto você já pagou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#791e94" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%">
+        <CardBox basis="12%" title='Contribuição' subtitle='Quanto você já pagou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#008000" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%">
+        <CardBox basis="12%" title='Saúde' subtitle='Quanto você já pagou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#9800f3" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%">
+        <CardBox basis="12%" title='Lazer' subtitle='Quanto você já pagou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#e03616" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%">
+        <CardBox basis="12%" title='Performance' subtitle='Sua meta hoje:12%'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#791e94" }} />
           </Box>

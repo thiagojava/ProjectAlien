@@ -27,22 +27,18 @@ export const options = {
     legend: {
       position: "top",
     },
-    title: {
-      display: true,
-      text: "Chart.js Line Chart",
-    },
   },
 };
 
 export const LineChart = (props) => {
-  const { name, description, labels, data, borderColor, backgroundColor } =
+  const { name, description, labels, data, borderColor, backgroundColor, height } =
     props;
 
   const datas = {
     labels,
     datasets: [
       {
-        label: "Dataset 1",
+        label: "",
         data: data,
         borderColor: borderColor,
         backgroundColor: backgroundColor,
@@ -51,7 +47,7 @@ export const LineChart = (props) => {
   };
 
   return (
-    <Box marginTop="20px" sx={{ background: "#141414", borderRadius: "10px" }}>
+    <Box marginTop="20px" height={height?height:null} sx={{ background: "#141414", borderRadius: "10px" }}>
       <Box marginBottom="10px" padding="10px">
         {name ? (
           <Typography color="#ffffff" style={{ fontSize: "20px" }}>

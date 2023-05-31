@@ -13,7 +13,7 @@ export const DashboardHeader = () => {
         marginTop="10px"
         justifyContent="space-between"
       >
-        <CardBox basis="33%">
+        <CardBox basis="33%" title='Bom dia Fulano de tal!' subtitle='O seu saldo total atualizado é:'>
           <Box display="flex">
             <Box flexBasis="48%" display="flex" alignItems="center">
               <Box>
@@ -41,7 +41,7 @@ export const DashboardHeader = () => {
             </Box>
           </Box>
         </CardBox>
-        <CardBox basis="63%">
+        <CardBox basis="63%" title='Transações' subtitle='Volume total:3.397.994 | Volume entre contas:321.397.994'>
           <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {dashboardMiniCard.map((e,index) => (
               <MiniCard key={index} icon={e.icon} title={e.title} basis="24%"/>

@@ -25,8 +25,9 @@ export const BoxCharts = () => {
         <Box
           display="flex"
           flexDirection="column"
-          sx={{ width: "30%" }}
+          sx={{ width: "30%"}}
           justifyContent="space-between"
+          
         >
           <LineChart
             name={fluxoCaixa2Data[0].name}
@@ -35,6 +36,7 @@ export const BoxCharts = () => {
             data={fluxoCaixa2Data[0].data}
             borderColor={fluxoCaixa2Data[0].borderColor}
             backgroundColor={fluxoCaixa2Data[0].backgroundColor}
+            height="100%"
           />
         </Box>
         <Box

@@ -16,7 +16,7 @@ export const DashboardMain = () => {
         justifyContent="space-between"
         gap="10px"
       >
-        <CardBox basis="40%">
+        <CardBox basis="40%" title='Últimos 7 dias' subtitle='Seu ticket médio foi de R$123.456.789'>
           <Box
             height="100%"
             display="flex"
@@ -36,7 +36,7 @@ export const DashboardMain = () => {
             />
           </Box>
         </CardBox>
-        <CardBox basis="25%">
+        <CardBox basis="25%" title='Próximas transações' subtitle='Seu saldo final será de:123.456.789'>
           <Box display="flex" alignItems="center" justifyContent="center" marginTop="10px" flexDirection="column">
             <Box flexBasis="48%" display="flex"  alignItems="center">
               <Box>
