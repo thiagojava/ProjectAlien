@@ -123,6 +123,75 @@ export const dashboardMiniData2 = [
   }
 ];
 
+export const dashboardMiniData3 = [
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#eb2e2e" }} />,
+    title: "Caldos", secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#EB922E" }} />,
+    title: "Festival",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#EBEB2E" }} />,
+    title: "Cerveja & chopp",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#4EC119" }} />,
+    title: "Carnes, aves & mar",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#4EC119" }} />,
+    title: "Frios & petiscos",secundaryText: "123.456.789,00"
+  }
+];
+
+export const dashboardMiniData4 = [
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Alimentos & outros", secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Bebidas & Outros",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Empório & outros",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Descartáveis & outros",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Utensílios & outros",secundaryText: "123.456.789,00"
+  }
+];
+
+export const dashboardMiniData5 = [
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Capex", secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Opex",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Insumos",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Infra",secundaryText: "123.456.789,00"
+  },
+  {
+    icon: <DataSaverOffIcon fontSize="large" sx={{ color: "#969696" }} />,
+    title: "Gestão",secundaryText: "123.456.789,00"
+  }
+];
+
 export const dashboardMiniIcon = [
   {
     icon: <SsidChartIcon fontSize="large" sx={{ color: "#969696" }} />,

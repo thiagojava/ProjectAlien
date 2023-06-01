@@ -1,4 +1,5 @@
 import { Box, Card, Typography } from "@mui/material";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
 export const CardIcon = (props) => {
   const {
@@ -10,6 +11,7 @@ export const CardIcon = (props) => {
     subtitle,
     icon,
     color,
+    arrow,
     children,
   } = props;
   return (
@@ -25,7 +27,6 @@ export const CardIcon = (props) => {
           background: "#141414",
           justifyContent: content || "space-around",
           flexBasis: basis || null,
-
         }}
       >
         {icon ? icon : null}
@@ -35,6 +36,7 @@ export const CardIcon = (props) => {
           </Typography>
           <Typography color={color || "#ffffff"} style={{ fontSize: "20px" }}>
             {subtitle || "123.456.789,00"}
+            {arrow ? <ArrowDropUpIcon sx={{ color: "#1DBB48" }} /> : null}
           </Typography>
         </Box>
       </Card>

@@ -1,12 +1,13 @@
 import { Box, Card, Typography } from "@mui/material";
 
 export const CardBox = (props) => {
-  const { width, direction, content, basis, title, subtitle, icon, children } = props;
+  const { width, direction, content, basis, title, subtitle, icon, height, children } = props;
   return (
     <>
       <Card
         sx={{
           width: width || "100%",
+          height: height || null, 
           padding:"10px"
         }}
         style={{

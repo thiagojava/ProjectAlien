@@ -31,7 +31,7 @@ export const DashboardFooter = () => {
           ))}
         </CardBox>
         <CardBox basis="48%" title='Endividamento' subtitle='O valor total acumulado é de 123.456.789'>
-          {dashboardMiniData2.map((e, index) => (
+        {dashboardMiniData2.map((e, index) => (
             <Box
               key={index}
               width="100%"

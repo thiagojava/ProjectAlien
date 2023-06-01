@@ -20,11 +20,6 @@ ChartJS.register(
 
 const options = {
   responsive: true,
-  plugins: {
-    title: {
-      display: true,
-    },
-  },
 };
 
 export const VerticalBarChart = (props) => {
