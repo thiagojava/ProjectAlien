@@ -42,7 +42,7 @@ export const DashboardHeader = () => {
           </Box>
         </CardBox>
         <CardBox basis="63%" title='Transações' subtitle='Volume total:3.397.994 | Volume entre contas:321.397.994'>
-          <Box display="flex" flexWrap="wrap" justifyContent="space-between">
+          <Box display="flex" flexWrap="wrap" justifyContent="flex-start" gap="2px">
             {dashboardMiniCard.map((e,index) => (
               <MiniCard key={index} icon={e.icon} title={e.title} basis="24%"/>
             ))}
