@@ -12,7 +12,10 @@ import { headerDespesas } from "../../utils/headersList";
 import { colorsChart } from "../../utils/colors";
 import { LineChart } from "../charts/line/LineChart";
 import { MiniCard } from "../card/MiniCard";
-import { dashboardMiniData, dashboardMiniData2 } from "../../utils/dashboardData";
+import {
+  dashboardMiniData,
+  dashboardMiniData2,
+} from "../../utils/dashboardData";
 import { VerticalBarChart } from "../charts/bar/barChart";
 
 export const GestorMain = () => {
@@ -132,74 +135,55 @@ export const GestorMain = () => {
           justifyContent="space-between"
           gap="10px"
         >
-          <CardBox
-            basis="48%"
-            title="Cadastros última semana"
-            subtitle="O total de novos usuários foi de:123.456"
-          >
-            <Box width="100%" display="flex" justifyContent="center" alignItems="center">
-              <Box width="50%">
-                <LineChart
-                  labels={["", "", "", "", "", "", "", "", "", "", ""]}
-                  data={[
-                    45908, 137658, 20502, 71663, 29392, 62593, 58124, 60961,
-                    55856, 101538, 70356, 90321,
-                  ]}
-                  borderColor="#969696"
-                  backgroundColor="#000000"
-                />
-              </Box>
-            </Box>
-          </CardBox>
-          <CardBox
-            basis="48%"
-            title="Próximas transações"
-            subtitle="O saldo consolidado (R$):123.456.789.987.654"
-            height="400px"
-          >
-            <Box>
-              <Box>
-                <Typography color="#969696" style={{ fontSize: "12px" }}>
-                  R$ 123.456.789
-                </Typography>
-                <Typography style={{ fontSize: "9px", color: "#ffffff" }}>
-                  de transações projetadas:
-                </Typography>
-              </Box>
-              <Box width="30%">
-              <SimpleCircleChart colors={{ back: "#DA820E" }} />
-              </Box>
-            </Box>
-          </CardBox>
+          <LineChart
+            name={"Cadastros ultimas semanas"}
+            description={"O total de novos usuários foi de: 123.456"}
+            labels={[
+              "2022.1",
+              "2022.2",
+              "2022.3",
+              "2022.4",
+              "2023",
+              "2024",
+              "2025",
+              "2026",
+              "2027",
+            ]}
+            data={[
+              110123, 90054, 85126, 40565, 35564, 35469, 36546, 40216, 42666,
+            ]}
+            borderColor={"#969696"}
+            backgroundColor={"#000000"}
+          />         
           <CardBox
             basis="100%"
             title="Volume transacional"
             subtitle="Acima de 50 anos (12%):321.793.994"
           >
             {dashboardMiniData2.map((e, index) => (
-            <Box
-              key={index}
-              width="100%"
-              display="flex"
-              justifyContent="space-between"
-            >
-              <MiniCard key={index} icon={e.icon} title={e.title} />
-              <Box>
-                <Typography style={{ fontSize: "14px", color: "#969696" }}>
-                  {e.secundaryText}
-                </Typography>
-                <Typography color="#ffffff" style={{ fontSize: "18px" }}>
-                  123.456.789,00
-                </Typography>
+              <Box
+                key={index}
+                width="100%"
+                display="flex"
+                justifyContent="space-between"
+              >
+                <MiniCard key={index} icon={e.icon} title={e.title} />
+                <Box>
+                  <Typography style={{ fontSize: "14px", color: "#969696" }}>
+                    {e.secundaryText}
+                  </Typography>
+                  <Typography color="#ffffff" style={{ fontSize: "18px" }}>
+                    123.456.789,00
+                  </Typography>
+                </Box>
+                <Box>
+                  <Typography style={{ fontSize: "14px", color: "#969696" }}>
+                    Representa hoje 12% do total de endividamento
+                  </Typography>
+                  <LinearProgress variant="determinate" value={89} />
+                </Box>
               </Box>
-              <Box>
-                <Typography style={{ fontSize: "14px", color: "#969696" }}>
-                  Representa hoje 12% do total de endividamento
-                </Typography>
-                <LinearProgress variant="determinate" value={89} />
-              </Box>
-            </Box>
-          ))}
+            ))}
           </CardBox>
         </Box>
       </Box>
