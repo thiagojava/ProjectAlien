@@ -104,7 +104,7 @@ export const DespesasMain = () => {
                 </Box>
               </Box>
             </Box>
-            <Box width="200px" display="flex" alignItems="center">
+            <Box width="200px" display="flex" flexDirection="column" alignItems="center">
               <SimpleCircleChart colors={{ back: "#9800f3" }} />
               <Box>
                 <Typography color="#969696" style={{ fontSize: "12px" }}>
@@ -145,7 +145,7 @@ export const DespesasMain = () => {
                 </Box>
               </Box>
             </Box>
-            <Box width="200px" display="flex" alignItems="center">
+            <Box width="200px" display="flex" flexDirection="column" alignItems="center">
               <SimpleCircleChart colors={{ back: "#e03616" }} />
               <Box>
                 <Typography color="#969696" style={{ fontSize: "12px" }}>
@@ -193,7 +193,7 @@ export const DespesasMain = () => {
                 </Box>
               </Box>
             </Box>
-            <Box width="200px" display="flex" alignItems="center">
+            <Box width="200px" display="flex" flexDirection="column" alignItems="center">
               <SimpleCircleChart colors={{ back: "#E97406" }} />
               <Box>
                 <Typography color="#969696" style={{ fontSize: "12px" }}>
@@ -234,7 +234,7 @@ export const DespesasMain = () => {
                 </Box>
               </Box>
             </Box>
-            <Box width="200px" display="flex" alignItems="center">
+            <Box width="200px" display="flex" flexDirection="column" alignItems="center">
               <SimpleCircleChart colors={{ back: "#41d3bd" }} />
               <Box>
                 <Typography color="#969696" style={{ fontSize: "12px" }}>
@@ -255,49 +255,32 @@ export const DespesasMain = () => {
         marginBottom="10px"
         justifyContent="space-between"
       >
-        <CardBox basis="24%" title='Diversos' subtitle='O valor é de 123% em relação ao período anterior'>
-          <Box display="flex" gap="50px">
-            <Box>
-              <Box marginTop="50px">
-                <MiniCard
-                  icon={
-                    <HomeWorkIcon fontSize="large" sx={{ color: "#F0E032" }} />
-                  }
-                  title="Total acumulado (R$)"
-                />
-              </Box>
-            </Box>
-            <Box width="150px" display="flex" alignItems="center">
-              <SimpleCircleChart colors={{ back: "#F0E032" }} />
-            </Box>
-          </Box>
-        </CardBox>
-        <CardBox basis="12%" title='Home' subtitle='Quanto vc gastou:123.456'>
-          <Box width="150px" display="flex" justifyContent="center">
+        <CardBox basis="12%" content="space-around" title='Home' subtitle='Quanto vc gastou:123.456'>
+          <Box width="150px"  display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#E97406" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%" title='Estrutura' subtitle='Quanto você já pagou:123.456'>
+        <CardBox basis="12%" content="space-around" title='Estrutura' subtitle='Quanto você já pagou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#791e94" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%" title='Contribuição' subtitle='Quanto você já pagou:123.456'>
+        <CardBox basis="12%" content="space-around" title='Contribuição' subtitle='Quanto você já pagou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#008000" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%" title='Saúde' subtitle='Quanto você já pagou:123.456'>
+        <CardBox basis="12%" content="space-around" title='Saúde' subtitle='Quanto você já pagou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#9800f3" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%" title='Lazer' subtitle='Quanto você já pagou:123.456'>
+        <CardBox basis="12%" content="space-around" title='Lazer' subtitle='Quanto você já pagou:123.456'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#e03616" }} />
           </Box>
         </CardBox>
-        <CardBox basis="12%" title='Performance' subtitle='Sua meta hoje:12%'>
+        <CardBox basis="12%" content="space-around" title='Performance' subtitle='Sua meta hoje:12%'>
           <Box width="150px" display="flex" justifyContent="center">
             <SimpleCircleChart colors={{ back: "#791e94" }} />
           </Box>
